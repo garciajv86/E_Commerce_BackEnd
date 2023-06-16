@@ -74,7 +74,7 @@ This project is protected under the [MIT](https://choosealicense.com/licenses/mi
 
 MySQL2, express, sequelize, and dotenv was the NPM packages used for this project
 
-- [MySQL Docs](https://www.npmjs.com/package/mysql2#installation)
+- [MySQL2 Docs](https://www.npmjs.com/package/mysql2#installation)
 - [Sequelize Docs](https://sequelize.org/docs/v6/)
 - [Express Docs](https://expressjs.com/en/4x/api.html)
 - [Dotenv Docs](https://www.npmjs.com/package/dotenv)
