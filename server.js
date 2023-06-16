@@ -1,7 +1,7 @@
-const express = require('express');
-const routes = require('./Develop/routes');
+const express = require("express");
+const routes = require("./Develop/routes");
 // TODO: Import sequelize connection
-const sequelize = require('./Develop/config/connection');
+const sequelize = require("./Develop/config/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -14,8 +14,9 @@ app.use(routes);
 
 // TODO: Sync sequelize models to the database, then turn on the server
 //* Connects to the database before starting the Express.js server
-sequelize.sync().then(() => {
+//? Do I really need force: false since its the default?
+sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}!`);
   });
-})
+});
